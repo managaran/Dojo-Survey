@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container col-4">
+        <form class="bg-dark mx-auto text-center text-light m-3 p-5 rounded" action="/process" method="post">
+            <div class="form-group mx-auto mb-3 text-left pb-5">
+                <h1 class="text-primary pb-3">Dojo Survey</h1>
+                <label for="name" class="form-label text-primary">Name:</label>
+                <input type="text" class="form-control" name="name" aria-describedby="helpId" placeholder="">
+                <label for="dojo_location" class="form-label pt-3 text-primary">Dojo Location:</label>
+                <select class="form-select" name="dojo_location">
+                    <option selected></option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Seatle">Seatle</option>
+                    <option value="Burbank">Burbank</option>
+                    <option value="Bellevue">Bellevue</option>
+                    <option value="Online">Online</option>
+                </select>
+                <label for="favorite_language" class="form-label pt-3 text-primary">Favorite Language:</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="HTML"> HTML</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="CSS"> CSS</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="Javascript"> JavaScript</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="Python"> Python</label><br>
+                    <label><input  class="form-check-input" id="349" type="radio" name="favorite_language" value="C#"> C#</label><br>
+                <label for="comments" class="form-label pt-3 text-primary">Comments (optional):</label>
+                <textarea class="form-control" name="comments" id="" rows="5"></textarea>
+                <input type='submit' value='Submit' class="btn btn-primary mt-4 float-right">
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
